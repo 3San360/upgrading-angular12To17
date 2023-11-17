@@ -1,0 +1,54 @@
+// Your component styles.scss file
+
+// Style for the container with column layout
+.container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+  // Add your background color and other stylings
+  background-color: #e4111158;
+  padding: 20px;
+
+  // Style the child elements within the column layout
+  div {
+    // Add some spacing between the child elements
+    margin-bottom: 10px;
+
+    // Add background color to child elements
+    background-color: #7f7777;
+    padding: 10px;
+    border: 1px solid #f5b8b8;
+    border-radius: 5px;
+  }
+}
+
+// Style for the container with row layout
+.container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  // Add your background color and other stylings
+  background-color: #737373;
+  padding: 20px;
+
+  // Style the child elements within the row layout
+  div {
+    // Add some spacing between the child elements
+    margin-right: 10px;
+
+    // Add background color to child elements
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #424040;
+    border-radius: 5px;
+  }
+
+  // Remove margin from the last child element to avoid unnecessary spacing
+  div:last-child {
+    margin-right: 0;
+  }
+}
