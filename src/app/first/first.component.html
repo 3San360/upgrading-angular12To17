@@ -1,7 +1,24 @@
 <h1>Angular 12 -- installed</h1>
 <hr />
 
+<div>
+  <button (click)="showSpinner()">Show Spinner</button>
+  <button (click)="hideSpinner()">Hide Spinner</button>
+  <ngx-spinner name="san" bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "ball-clip-rotate-multiple"><p style="color: white" > Loading... </p></ngx-spinner>
+</div>
+
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+<hr />
+
 <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+<hr />
 
 <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px">
   <div fxLayout="column" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px">
@@ -44,7 +61,9 @@
     </mat-form-field>
   </div>
 </div>
-----------------------------------------------------
+
+<hr />
+
 <div fxLayout="column" fxLayout.lt-md="row" fxLayoutGap.gt-sm="10px">
   <div fxLayout="row" fxLayout.lt-md="row" fxLayoutGap.gt-sm="10px">
     <mat-form-field appearance="outline">
@@ -87,6 +106,8 @@
   </div>
 </div>
 
+<hr />
+
 <div class="container-column">
   <div fxFlex="30%">Dummy Div 1</div>
   <div fxFlex="30%">Dummy Div 2</div>
@@ -98,4 +119,3 @@
   <div fxFlex="30%">Dummy Div 2</div>
   <div fxFlex="30%">Dummy Div 3</div>
 </div>
-
