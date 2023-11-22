@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChartComponent } from 'ng-apexcharts';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
@@ -7,17 +8,41 @@ import { NgxSpinnerService } from 'ngx-spinner';
   styleUrls: ['./first.component.scss'],
 })
 export class FirstComponent implements OnInit {
-  constructor(private spinner: NgxSpinnerService) {}
+  public chartOptions: any;
+
+  constructor(private spinner: NgxSpinnerService) {
+    this.chartOptions = {
+      series: [44, 55, 13, 43, 22],
+      chart: {
+        type: "donut",
+        height: 200
+      },
+      labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
+      responsive: [
+        {
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: "bottom"
+            }
+          }
+        }
+      ]
+    };
+  }
 
   ngOnInit(): void {
-    this.showSpinner()
+    this.showSpinner();
   }
 
   showSpinner() {
     this.spinner.show('san');
     setTimeout(() => {
-      this.spinner.hide();
-    }, 5000); // Hide the spinner after 5 seconds (adjust as needed)
+      this.spinner.hide('san');
+    }, 1000); // Hide the spinner after 5 seconds (adjust as needed)
   }
 
   hideSpinner() {

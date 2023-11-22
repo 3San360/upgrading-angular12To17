@@ -1,20 +1,26 @@
 <h1>Angular 12 -- installed</h1>
 <hr />
 
+<apx-chart
+  [series]="chartOptions.series"
+  [chart]="chartOptions.chart"
+  [labels]="chartOptions.labels"
+  [responsive]="chartOptions.responsive"
+></apx-chart>
+<hr />
+
 <div>
   <button (click)="showSpinner()">Show Spinner</button>
   <button (click)="hideSpinner()">Hide Spinner</button>
-  <ngx-spinner name="san" bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "ball-clip-rotate-multiple"><p style="color: white" > Loading... </p></ngx-spinner>
+  <ngx-spinner
+    name="san"
+    bdColor="rgba(0, 0, 0, 0.8)"
+    size="medium"
+    color="#fcb03b"
+    type="ball-clip-rotate-multiple"
+    ><p style="color: red">Loading...</p></ngx-spinner
+  >
 </div>
-
-<ngx-spinner
-  bdColor="rgba(51,51,51,0.8)"
-  size="medium"
-  color="#fff"
-  type="ball-scale-multiple"
->
-  <p style="font-size: 20px; color: white">Loading...</p>
-</ngx-spinner>
 <hr />
 
 <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
@@ -61,7 +67,6 @@
     </mat-form-field>
   </div>
 </div>
-
 <hr />
 
 <div fxLayout="column" fxLayout.lt-md="row" fxLayoutGap.gt-sm="10px">
@@ -105,7 +110,6 @@
     </mat-form-field>
   </div>
 </div>
-
 <hr />
 
 <div class="container-column">
