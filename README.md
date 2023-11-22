@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+<!-- To Upgrade versions -->
+---------- run it in powershell as administrator(Globally) ------------------
+1. npm uninstall -g @angular/cli
+2. npm install -g @angular/cli@13
+
+---------- run it in VS terminal of specific project ------------------
+3. npm cache clean --force
+4. npm config set registry ''
+5. ng update @angular/core@13 @angular/cli@13
+6. npm install --force
+
+
+
