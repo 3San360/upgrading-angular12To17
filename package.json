@@ -21,8 +21,6 @@
     "@angular/platform-browser": "~13.4.0",
     "@angular/platform-browser-dynamic": "~13.4.0",
     "@angular/router": "~13.4.0",
-    "apexcharts": "^3.31.0",
-    "ng-apexcharts": "^1.7.1",
     "ngx-spinner": "^13.0.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.1",
