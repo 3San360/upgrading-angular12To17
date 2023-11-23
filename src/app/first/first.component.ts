@@ -11,7 +11,7 @@ export class FirstComponent implements OnInit {
 
   constructor(private spinner: NgxSpinnerService) {
 
-    console.log('Running FirstComponent constructor')
+    console.log('Running FirstComponent constructor 1')
 
     this.chartOptions = {
       series: [44, 55, 13, 43, 22],
