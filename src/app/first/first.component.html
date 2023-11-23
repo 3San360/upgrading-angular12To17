@@ -13,18 +13,12 @@
 ></apx-chart> -->
 <hr />
 
-<div>
-  <button (click)="showSpinner()">Show Spinner</button>
-  <button (click)="hideSpinner()">Hide Spinner</button>
-  <ngx-spinner
-    name="san"
-    bdColor="rgba(0, 0, 0, 0.8)"
-    size="medium"
-    color="#fcb03b"
-    type="ball-clip-rotate-multiple"
-    ><p style="color: red">Loading...</p></ngx-spinner
-  >
-</div>
+
+<button (click)="showSpinner()">Show Spinner</button>
+<button (click)="hideSpinner()">Hide Spinner</button>
+<ngx-spinner name="san" bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-clip-rotate-multiple">
+  <p style="color: white"> Loading... </p>
+</ngx-spinner>
 <hr />
 
 <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
@@ -38,7 +32,7 @@
     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     <mat-hint>Hint</mat-hint>
   </mat-form-field>
-  
+
   <div fxLayout="column" fxLayout.lt-md="column" fxLayoutGap.gt-sm="10px">
     <mat-form-field appearance="outline">
       <mat-label>Field Number 1</mat-label>
