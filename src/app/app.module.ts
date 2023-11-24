@@ -10,8 +10,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { FlexLayoutModule } from '@angular/flex-layout';
-// import { NgApexchartsModule } from 'ng-apexcharts';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { NgApexchartsModule } from 'ng-apexcharts';
 // import { FlexLayoutModule } from '@angular/flex-layout'
 
 @NgModule({
@@ -29,7 +29,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     MatSelectModule,
     // FlexLayoutModule
     FlexLayoutModule,
-    // NgApexchartsModule,
+    NgApexchartsModule,
     NgxSpinnerModule
   ],
   providers: [],
