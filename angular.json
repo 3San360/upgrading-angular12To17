@@ -78,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "upgrading-angular12To17:build:production"
+              "buildTarget": "upgrading-angular12To17:build:production"
             },
             "development": {
-              "browserTarget": "upgrading-angular12To17:build:development"
+              "buildTarget": "upgrading-angular12To17:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,7 +89,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "upgrading-angular12To17:build"
+            "buildTarget": "upgrading-angular12To17:build"
           }
         },
         "test": {
